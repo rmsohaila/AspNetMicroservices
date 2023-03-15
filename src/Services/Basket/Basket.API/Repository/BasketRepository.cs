@@ -28,6 +28,8 @@ namespace Basket.API.Repository
             if (String.IsNullOrEmpty(basket))
                 return null;
 
+            
+
             return JsonConvert.DeserializeObject<ShoppingCart>(basket);
         }
 
